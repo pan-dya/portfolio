@@ -14,7 +14,7 @@ module.exports = {
   },
   plugins: ['react', 'prettier'],
   rules: {
-    'prettier/prettier': 'error', 
+    'prettier/prettier': 'error',
     semi: ['error', 'always'],
     quotes: ['error', 'single'],
     'react/react-in-jsx-scope': 'off', // Disable the rule
