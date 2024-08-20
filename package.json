@@ -4,8 +4,6 @@
   "private": true,
   "homepage": "https://pan-dya.github.io/portfolio",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -41,11 +39,14 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.8",
+    "@testing-library/react": "^16.0.0",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "gh-pages": "^6.1.1",
-    "prettier": "^3.3.3",
-    "husky": "^8.0.0"
+    "husky": "^8.0.0",
+    "jest": "^27.5.1",
+    "prettier": "^3.3.3"
   }
 }
