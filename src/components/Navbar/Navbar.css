@@ -21,6 +21,11 @@
   height: auto;
 }
 
+.logo:hover {
+  transform: translateY(-0.5rem);
+  transition: all 0.3s ease;
+}
+
 .nav-content ul {
   display: flex;
   align-items: center;
