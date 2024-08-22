@@ -44,6 +44,11 @@
   line-height: 2rem;
 }
 
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
 .hero-img {
   /* flex: 1; */
   display: flex;
