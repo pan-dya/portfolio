@@ -14,11 +14,11 @@ const Timeline = () => {
     <section className="timeline-container">
       <h5>Experience</h5>
       <VerticalTimeline lineColor="#6751b9">
-        {TIMELINE.map((element) => {
+        {TIMELINE.map((element, index) => {
           let isWorkIcon = element.icon === 'work';
           return (
             <VerticalTimelineElement
-              key={element.key}
+              key={element.id || index}
               date={element.date}
               dateClassName="date"
               iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
