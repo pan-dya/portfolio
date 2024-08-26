@@ -17,4 +17,4 @@ class IntersectionObserver {
   }
 }
 
-global.IntersectionObserver = IntersectionObserver;
+globalThis.IntersectionObserver = IntersectionObserver;
