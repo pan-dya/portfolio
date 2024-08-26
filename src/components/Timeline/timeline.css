@@ -1,0 +1,86 @@
+.timeline-container {
+  margin: 4rem 0;
+  position: relative;
+}
+
+.timeline-container::after,
+.timeline-container::before {
+  content: ' ';
+  width: 28rem;
+  height: 28rem;
+  border-radius: 28.125rem;
+  background: #7c66e3;
+  position: absolute;
+  z-index: -1;
+  filter: blur(200px);
+}
+
+.timeline-container::after {
+  top: -5rem;
+  left: -5rem;
+}
+
+.timeline-container::before {
+  background: #9e51b9;
+  bottom: 0rem;
+  right: 0rem;
+}
+
+.timeline-container h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 3.5rem;
+}
+
+.vertical-timeline-element-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg-timeline {
+  width: 2.25rem;
+  height: 2.25rem;
+  filter: brightness(0) invert(1);
+}
+
+.vertical-timeline-element-content {
+  box-shadow:
+    0 0.25em 0.5em rgba(0, 0, 0, 0.25),
+    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+  background: transparent;
+  min-height: 23rem;
+  border-radius: 0.65rem;
+  border: 1.5px solid #6751b9;
+  background: rgba(22, 17, 47, 0.398);
+  backdrop-filter: blur(1rem);
+}
+
+.vertical-timeline-element-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.8rem 2rem;
+  background: linear-gradient(180deg, #ac96ff 0%, #7c5fe6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 1.5px solid #6751b9;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.vertical-timeline-element-content-arrow {
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 100%;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-right: 7px solid #6751b9;
+}
+
+@media (max-width: 1025px) {
+  .skills-info-card {
+    font-size: 1.1rem;
+  }
+}
