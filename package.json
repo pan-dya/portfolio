@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://pan-dya.github.io/portfolio",
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
