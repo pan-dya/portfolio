@@ -3,6 +3,13 @@ import PropTypes from 'prop-types';
 import './MobileNav.css';
 
 const MobileNav = ({ isOpen, toggleMenu }) => {
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       <div
@@ -13,16 +20,25 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
           <img className="logo" src="" alt="logo" />
           <ul>
             <li>
-              <a className="menu-item">Home</a>
+              <a className="menu-item" href="#">
+                Home
+              </a>
             </li>
             <li>
-              <a className="menu-item">Skills</a>
+              <a className="menu-item" href="#skills">
+                Skills
+              </a>
             </li>
             <li>
-              <a className="menu-item">Experience</a>
+              <a className="menu-item" href="#experience">
+                Experience
+              </a>
             </li>
 
-            <button className="contact-btn" onClick={() => {}}>
+            <button
+              className="contact-btn"
+              onClick={() => scrollToSection('contact')}
+            >
               Contact Me
             </button>
           </ul>

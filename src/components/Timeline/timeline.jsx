@@ -11,7 +11,7 @@ const Timeline = () => {
   let workIconStyles = { background: '#a993fe' };
   let schoolIconStyles = { background: '#7e61e7' };
   return (
-    <section className="timeline-container">
+    <section className="timeline-container" id="experience">
       <h5>Experience</h5>
       <VerticalTimeline lineColor="#6751b9">
         {TIMELINE.map((element, index) => {
