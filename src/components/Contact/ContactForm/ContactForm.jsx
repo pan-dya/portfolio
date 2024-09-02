@@ -36,7 +36,6 @@ const ContactForm = () => {
         },
         (error) => {
           console.log('FAILED...', error.text);
-          console.log(process.env.REACT_APP_EMAILJS_TEMPLATE_ID);
           alert('Failed to send message. Please try again later.');
         },
       );
