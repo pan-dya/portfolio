@@ -1,6 +1,3 @@
-// https://www.youtube.com/watch?v=yp6tRkS-QBU
-// 39.22
-
 import React, { useState } from 'react';
 import './Skills.css';
 import { SKILLS } from '../../utils/data';
